@@ -11,7 +11,7 @@ window.config(background="#550000")
 submit = Button(window, text="Enter", command=submit)
 
 entry = Entry()
-entry.pack()
+entry.pack(pady=130) # where the entry widget is on screen
 
 
 window.mainloop()

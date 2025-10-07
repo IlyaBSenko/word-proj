@@ -1,0 +1,5 @@
+easy = [cat, car, bat, tree, pizza, four, one, two, three, all, dog, up, old, size, lay, true, word, tray]
+
+medium = []
+
+hard = []
