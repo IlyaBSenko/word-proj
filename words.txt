@@ -1,5 +1,21 @@
-easy = [cat, car, bat, tree, pizza, four, one, two, three, all, dog, up, old, size, lay, true, word, tray]
+easy_words = [
+    "cat", "dog", "tree", "book", "fish", "star", "moon", "bird",
+    "door", "milk", "rain", "ball", "frog", "shoe", "leaf", "cake",
+    "fire", "snow", "boat", "rock", "sand", "cup", "duck", "lamp",
+    "wind", "grass", "coin", "flag", "seed", "farm"
+]
 
-medium = []
+medium_words = [
+    "happy", "yellow", "window", "butter", "planet", "garden",
+    "silver", "rocket", "mountain", "teacher", "holiday", "picture",
+    "machine", "vehicle", "library", "concert", "journey", "pumpkin",
+    "diamond", "weather", "monster", "festival", "kitchen", "adventure"
+]
 
-hard = []
+hard_words = [
+    "astonishing", "meticulous", "transparency", "benevolent",
+    "complicated", "astonishment", "revolutionary", "magnificent",
+    "extraordinary", "unbelievable", "appreciation", "discovery",
+    "communication", "university", "determination", "intelligence",
+    "architecture", "responsibility", "civilization", "entertainment"
+]
