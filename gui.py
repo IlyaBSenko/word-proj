@@ -11,7 +11,7 @@ def submit():
 
 window = Tk()
 window.title("PLACEHOLDER TITLE")
-window.geometry("400x300")
+window.geometry("600x600")
 window.config(background="#550000")
 
 with open("words.txt", "r") as f:
@@ -34,11 +34,14 @@ rand_word.pack()
 
 entry = Entry(window, font=("Palatino Linotype Bold Italic", 14))
 entry.place(relx=0.5, rely=0.7, anchor="center") 
+entry.focus_set() # clutch lets you start typing immediately without needing to click the box first
 
 result_label = Label(window, text="", bg="#550000", fg="white", font=("Palatino Linotype Bold Italic", 14))
-
+result_label.pack(pady=8)
 
 submit_button = Button(window, text="Enter", command=submit)
 submit_button.place(relx=0.5, rely=0.9, anchor="center")
+
+window.bind("<Return>", lambda e: submit()) # connects keyboard enter button to submit button, clutch
 
 window.mainloop()
