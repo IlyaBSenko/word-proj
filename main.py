@@ -2,12 +2,25 @@ from tkinter import *
 import random
 
 
+def clear_label():
+    rand_word.config(text="")
+
 def submit():
     guess = entry.get().strip()
     if guess.lower() == random_word:
         result_label.config(text="Lol nice", fg="black")
     else:
         result_label.config(text="Wrong, die", fg="black")
+        
+def next():
+    new_random_word = random.choice(easy_words)
+    sorted_word = sorted(new_random_word)
+    sorted_string = "".join(sorted_word)
+    clear_label(rand_word)
+    rand_word = Label(window, text=sorted_string, font=("Palatino Linotype Bold Italic", 12), bg="#F7DCEC", fg="black")
+    rand_word.pack()
+    
+    
 
 window = Tk()
 window.title("WORD GUESSR")
@@ -42,7 +55,7 @@ result_label.pack(pady=8)
 submit_button = Button(window, text="Enter", command=submit)
 submit_button.place(relx=0.3, rely=0.9, anchor="center")
 
-next_button = Button(window, text="Next Word", bg="#F7DCEC", fg="black")
+next_button = Button(window, text="Next Word", bg="#F7DCEC", fg="black", command=next)
 next_button.place(relx=0.7, rely=0.9, anchor="center")
 
 window.bind("<Return>", lambda e: submit()) # connects keyboard enter button to submit button, clutch
