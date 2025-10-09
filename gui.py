@@ -24,7 +24,7 @@ Guess_word_label = Label(window, text="Guess the word:", font=("Palatino Linotyp
 Guess_word_label.pack(pady=21)
 
 rand_word = Label(window, text=random_word_text, font=("Palatino Linotype Bold Italic", 12), bg="#550000")
-rand_word.pack(pady=25)
+rand_word.pack()
 
 
 
