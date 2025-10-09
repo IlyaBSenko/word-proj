@@ -26,8 +26,8 @@ sorted_string = "".join(sorted_word)
 title_label = Label(window, text="Word Guessr", font=("Segoe Script Bold", 24, "bold"), bg="#550000")
 title_label.pack(pady=20)
 
-Guess_word_label = Label(window, text="Guess the word:", font=("Palatino Linotype Bold Italic", 16), bg="#550000")
-Guess_word_label.pack(pady=21)
+guess_word_label = Label(window, text="Guess the word:", font=("Palatino Linotype Bold Italic", 16), bg="#550000")
+guess_word_label.pack(pady=21)
 
 rand_word = Label(window, text=sorted_string, font=("Palatino Linotype Bold Italic", 12), bg="#550000")
 rand_word.pack()
