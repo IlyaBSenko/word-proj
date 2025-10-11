@@ -3,22 +3,21 @@ import random
 
 
 def clear_label():
-    rand_word.config(text="")
+    rand_word.config(text=sorted_string)
 
 def submit():
     guess = entry.get().strip()
-    if guess.lower() == random_word:
+    if guess.lower() == random_word.lower():
         result_label.config(text="Lol nice", fg="black")
     else:
         result_label.config(text="Wrong, die", fg="black")
         
 def next():
-    new_random_word = random.choice(easy_words)
-    sorted_word = sorted(new_random_word)
+    global random_word
+    random_word = random.choice(easy_words)
+    sorted_word = sorted(random_word)
     sorted_string = "".join(sorted_word)
-    clear_label(rand_word)
-    rand_word = Label(window, text=sorted_string, font=("Palatino Linotype Bold Italic", 12), bg="#F7DCEC", fg="black")
-    rand_word.pack()
+    rand_word.config(text="")
     
     
 
