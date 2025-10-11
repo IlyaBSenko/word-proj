@@ -45,7 +45,7 @@ guess_word_label.pack(pady=21)
 rand_word = Label(window, text=sorted_string, font=("Palatino Linotype Bold Italic", 12), bg="#F7DCEC", fg="black")
 rand_word.pack()
 
-entry = Entry(window, font=("Palatino Linotype Bold Italic", 14), fg="white")
+entry = Entry(window, font=("Palatino Linotype Bold Italic", 14), fg="black")
 entry.place(relx=0.5, rely=0.7, anchor="center") 
 entry.focus_set() # clutch lets you start typing immediately without needing to click the box first
 
